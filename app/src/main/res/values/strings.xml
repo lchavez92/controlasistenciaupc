@@ -11,4 +11,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_registroasistencia">Registro de Asistencia</string>
+    <string name="menu_leaves">leaves</string>
+    <string name="menu_location">location</string>
 </resources>
