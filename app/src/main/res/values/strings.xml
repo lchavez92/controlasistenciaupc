@@ -19,7 +19,5 @@
     <string name="option_get_place">Get place</string>
     <string name="pick_place">Choose a place</string>
     <string name="menu_registroasistencia">Registro de Asistencia</string>
-    <string name="menu_leaves">leaves</string>
-    <string name="menu_location">location</string>
     <string name="menu_registrarsolicitud">Registrar Solicitud</string>
 </resources>
