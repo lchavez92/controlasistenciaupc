@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/nav_location"
-        android:name="pe.upc.controlasistencias.ui.location.LocationFragment"
+        android:name="pe.upc.controlasistencias.ui.location.MapsActivityCurrentPlace"
         android:label="@string/menu_location"
         tools:layout="@layout/fragment_location" />
 </navigation>

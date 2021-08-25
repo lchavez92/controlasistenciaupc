@@ -18,12 +18,12 @@
             android:title="@string/menu_slideshow" />
         <item
             android:id="@+id/nav_leaves"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_reorder"
             android:title="@string/menu_leaves" />
 
         <item
             android:id="@+id/nav_location"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_outline_gps_fixed"
             android:title="@string/menu_location" />
     </group>
 </menu>
