@@ -26,10 +26,10 @@ public class PlaceholderContent {
     private static final int COUNT = 25;
 
     static {
-        // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
-            addItem(createPlaceholderItem(i));
-        }
+        addItem(new PlaceholderItem("1", "Solicitud de Vacaciones", "Su solicitud está siendo revisada"));
+        addItem(new PlaceholderItem("2", "Validación de Asistencia", "Solicitud Aprobada"));
+        addItem(new PlaceholderItem("3", "Sustentacion de Falta", "Lamentamos informar que la solicitud está rechazada"));
+        addItem(new PlaceholderItem("4", "Solicitud de Vacaciones", "Su solicitud está siendo revisada"));
     }
 
     private static void addItem(PlaceholderItem item) {

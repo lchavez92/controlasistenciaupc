@@ -46,11 +46,13 @@ import com.google.android.libraries.places.api.net.FindCurrentPlaceRequest;
 import com.google.android.libraries.places.api.net.FindCurrentPlaceResponse;
 import com.google.android.libraries.places.api.net.PlacesClient;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Arrays;
 import java.util.List;
 
 import pe.upc.controlasistencias.BuildConfig;
+import pe.upc.controlasistencias.MainActivity;
 import pe.upc.controlasistencias.R;
 
 /**
@@ -127,7 +129,17 @@ public class MapsActivityCurrentPlace extends Fragment
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        //View parentLayout = getActivity().findViewById(R.id.df);
 
+        final Button button = (Button) getActivity().findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                /*Snackbar.make(v, "Ubicación Registrada", Snackbar.LENGTH_LONG)
+                        .setActionTextColor(getResources().getColor(android.R.color.holo_red_light ))
+                        .show();*/
+                startActivity(new Intent(getActivity().getApplicationContext(), MainActivity.class));
+            }
+        });
         // [END maps_current_place_map_fragment]
         // [END_EXCLUDE]
     }

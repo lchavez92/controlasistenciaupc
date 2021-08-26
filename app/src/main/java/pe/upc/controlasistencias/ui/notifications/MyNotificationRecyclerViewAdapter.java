@@ -34,8 +34,9 @@ public class MyNotificationRecyclerViewAdapter extends RecyclerView.Adapter<MyNo
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
+        //holder.mIdView.setText(mValues.get(position).id);
         holder.mContentView.setText(mValues.get(position).content);
+        holder.mDetailsView.setText(mValues.get(position).details);
     }
 
     @Override
@@ -44,14 +45,16 @@ public class MyNotificationRecyclerViewAdapter extends RecyclerView.Adapter<MyNo
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public final TextView mIdView;
+        //public final TextView mIdView;
         public final TextView mContentView;
+        public final TextView mDetailsView;
         public PlaceholderItem mItem;
 
         public ViewHolder(FragmentNotificationBinding binding) {
             super(binding.getRoot());
-            mIdView = binding.itemNumber;
+            //mIdView = binding.itemNumber;
             mContentView = binding.content;
+            mDetailsView = binding.details;
         }
 
         @Override
