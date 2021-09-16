@@ -12,7 +12,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.List;
+
 import pe.upc.controlasistencias.R;
+import pe.upc.controlasistencias.ui.leaves.LeaveListRecyclerViewAdapter;
+import pe.upc.controlasistencias.ui.leaves.data.DataSource;
+import pe.upc.controlasistencias.ui.leaves.data.LeaveHandler;
+import pe.upc.controlasistencias.ui.leaves.model.LeaveListItem;
+import pe.upc.controlasistencias.ui.notifications.data.NotificationDataSource;
+import pe.upc.controlasistencias.ui.notifications.data.NotificationHandler;
+import pe.upc.controlasistencias.ui.notifications.model.NotificationListItem;
 import pe.upc.controlasistencias.ui.notifications.placeholder.PlaceholderContent;
 
 /**
@@ -65,7 +74,15 @@ public class NotificationFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyNotificationRecyclerViewAdapter(PlaceholderContent.ITEMS));
+
+            NotificationDataSource ds = new NotificationDataSource();
+            ds.getNotifications("", getContext(), new NotificationHandler() {
+                @Override
+                public void fetchNotifications(List<NotificationListItem> items) {
+                    recyclerView.setAdapter(new MyNotificationRecyclerViewAdapter(items));
+                }
+            });
+
         }
         return view;
     }

@@ -24,4 +24,17 @@
     <string name="menu_registrarsolicitud">Registrar Solicitud</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="type_array">
+        <item>Licencia Ocasional</item>
+        <item>Licencia por Salud</item>
+        <item>Vacaciones</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string-array name="manager_array">
+        <item>Jesus Rojas</item>
+        <item>Luis Ramirez</item>
+        <item>Marco Perez</item>
+    </string-array>
 </resources>

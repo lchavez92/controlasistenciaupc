@@ -51,7 +51,6 @@ import com.google.android.material.snackbar.Snackbar;
 import java.util.Arrays;
 import java.util.List;
 
-import pe.upc.controlasistencias.BuildConfig;
 import pe.upc.controlasistencias.MainActivity;
 import pe.upc.controlasistencias.R;
 

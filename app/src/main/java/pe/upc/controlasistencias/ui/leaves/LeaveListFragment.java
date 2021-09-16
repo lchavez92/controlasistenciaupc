@@ -12,8 +12,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.List;
+
 import pe.upc.controlasistencias.R;
 import pe.upc.controlasistencias.ui.leaves.data.DataSource;
+import pe.upc.controlasistencias.ui.leaves.data.LeaveHandler;
+import pe.upc.controlasistencias.ui.leaves.model.LeaveListItem;
 
 /**
  * A fragment representing a list of Items.
@@ -65,7 +69,14 @@ public class LeaveListFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new LeaveListRecyclerViewAdapter(new DataSource().getLeaves()));
+            DataSource ds = new DataSource();
+            ds.getLeaves("", getContext(), new LeaveHandler() {
+                @Override
+                public void fetchLeaves(List<LeaveListItem> items) {
+                    recyclerView.setAdapter(new LeaveListRecyclerViewAdapter(items));
+                }
+            });
+
         }
         return view;
     }
