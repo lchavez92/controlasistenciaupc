@@ -3,6 +3,7 @@ package pe.upc.controlasistencias;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.SeekBar;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -18,6 +19,8 @@ import pe.upc.controlasistencias.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Creación de un objeto
+
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         setSupportActionBar(binding.appBarMain.toolbar);
         /*binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
@@ -63,5 +67,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+
     }
+
 }
