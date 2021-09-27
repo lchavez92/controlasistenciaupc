@@ -1,4 +1,4 @@
-package pe.upc.controlasistencias.ui.datosempreado;
+package pe.upc.controlasistencias.ui.datosempleado;
 
 import androidx.lifecycle.ViewModelProvider;
 
