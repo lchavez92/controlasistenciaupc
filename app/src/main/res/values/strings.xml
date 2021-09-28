@@ -31,6 +31,7 @@
     <string name="menu_soporte">Soporte</string>
     <string name="menu_carneempleado">Carne Empleado</string>
     <string name="menu_asistencia">Asistencia</string>
+    <string name="menu_marcarasistencia">Marcar Asistencia</string>
 
     <string-array name="type_array">
         <item>Licencia Ocasional</item>

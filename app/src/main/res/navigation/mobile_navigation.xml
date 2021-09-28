@@ -57,6 +57,11 @@
         android:label="@string/menu_asistencia"
         tools:layout="@layout/asistencias_fragment" />
 
+    <fragment
+        android:id="@+id/nav_marcarasistencia"
+        android:name="pe.upc.controlasistencias.ui.marcarasistencia.marcarasistenciaFragment"
+        android:label="@string/menu_marcarasistencia"
+        tools:layout="@layout/marcarasistencia_fragment" />
 
 
 </navigation>
