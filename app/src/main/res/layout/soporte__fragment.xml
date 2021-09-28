@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,6 +10,85 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="124dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="52dp"
+            android:text="Centro de ayuda"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="121dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="112dp"
+            android:text="Contáctenos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="158dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="188dp"
+            android:text="Condiciones y Privacidad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="146dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="260dp"
+            android:text="Info. de la aplicación"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="112dp"
+            android:src="@drawable/soporte"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="260dp"
+            android:src="@android:drawable/ic_dialog_info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="188dp"
+            android:src="@drawable/ic_reorder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/quantum_ic_search_grey600_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

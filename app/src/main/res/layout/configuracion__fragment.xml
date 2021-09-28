@@ -14,8 +14,9 @@
             android:id="@+id/switch1"
             android:layout_width="47dp"
             android:layout_height="0dp"
-            android:layout_marginStart="304dp"
-            android:layout_marginTop="236dp"
+            android:layout_marginTop="384dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.835"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,7 +25,7 @@
             android:layout_width="181dp"
             android:layout_height="25dp"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="236dp"
+            android:layout_marginTop="384dp"
             android:text="Desactivar Notificaciones"
             app:layout_constraintEnd_toStartOf="@+id/switch1"
             app:layout_constraintHorizontal_bias="0.0"
@@ -36,7 +37,7 @@
             android:layout_width="181dp"
             android:layout_height="25dp"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="332dp"
+            android:layout_marginTop="452dp"
             android:text="Cambiar contraseña"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -51,7 +52,17 @@
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.787" />
+            app:layout_constraintVertical_bias="0.776" />
+
+        <CalendarView
+            android:id="@+id/calendarView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
