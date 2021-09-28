@@ -29,6 +29,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_configuracion">Configuración</string>
     <string name="menu_soporte">Soporte</string>
+    <string name="menu_carneempleado">Carne Empleado</string>
 
     <string-array name="type_array">
         <item>Licencia Ocasional</item>

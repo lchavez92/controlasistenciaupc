@@ -13,10 +13,14 @@
 
         <item android:id="@+id/nav_datos" android:icon="@drawable/datos" android:title="@string/menu_datos" />
 
+        <item
+            android:id="@+id/nav_carneempleado"
+            android:icon="@drawable/carnet"
+            android:title="@string/menu_carneempleado" />
+
         <item android:id="@+id/nav_configuracion" android:icon="@drawable/configuracion" android:title="@string/menu_configuracion" />
 
         <item android:id="@+id/nav_soporte" android:icon="@drawable/soporte" android:title="@string/menu_soporte" />
-
 
 
     </group>
