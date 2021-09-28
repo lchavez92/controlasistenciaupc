@@ -30,6 +30,7 @@
     <string name="menu_configuracion">Configuración</string>
     <string name="menu_soporte">Soporte</string>
     <string name="menu_carneempleado">Carne Empleado</string>
+    <string name="menu_asistencia">Asistencia</string>
 
     <string-array name="type_array">
         <item>Licencia Ocasional</item>

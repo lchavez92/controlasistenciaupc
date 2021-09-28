@@ -51,6 +51,12 @@
         android:label="@string/menu_carneempleado"
         tools:layout="@layout/carneempleado_fragment" />
 
+    <fragment
+        android:id="@+id/nav_asistencia"
+        android:name="pe.upc.controlasistencias.ui.asistencia.asistenciasFragment"
+        android:label="@string/menu_asistencia"
+        tools:layout="@layout/asistencias_fragment" />
+
 
 
 </navigation>
