@@ -32,11 +32,19 @@
         android:name="pe.upc.controlasistencias.ui.datosempleado.DatosFragment"
         android:label="@string/menu_datos"
         tools:layout="@layout/fragment_datos" />
+
     <fragment
         android:id="@+id/nav_configuracion"
-        android:name="pe.upc.controlasistencias.ui.datosempleado.DatosFragment"
+        android:name="pe.upc.controlasistencias.ui.configuracion.configuracion_Fragment"
         android:label="@string/menu_configuracion"
         tools:layout="@layout/configuracion__fragment" />
+
+    <fragment
+        android:id="@+id/nav_soporte"
+        android:name="pe.upc.controlasistencias.ui.soporte.soporte_Fragment"
+        android:label="@string/menu_soporte"
+        tools:layout="@layout/soporte__fragment" />
+
 
 
 </navigation>
