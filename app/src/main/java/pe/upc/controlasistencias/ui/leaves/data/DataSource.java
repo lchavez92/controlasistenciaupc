@@ -35,7 +35,8 @@ public class DataSource {
             JSONArray jsonArray = new JSONArray(response);*/
             Log.i("======>", response);
             Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create();
-            List<LeaveListItem> items = gson.fromJson(response, new TypeToken<List<LeaveListItem>>(){}.getType());
+            List<LeaveListItem> items = gson.fromJson(response, new TypeToken<List<LeaveListItem>>() {
+            }.getType());
 
             handler.fetchLeaves(items);
 

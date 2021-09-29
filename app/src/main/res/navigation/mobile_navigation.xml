@@ -47,7 +47,7 @@
 
     <fragment
         android:id="@+id/nav_carneempleado"
-        android:name="pe.upc.controlasistencias.ui.carneempleado.carneempleadoFragment"
+        android:name="pe.upc.controlasistencias.ui.carneempleado.CarneEmpleadoFragment"
         android:label="@string/menu_carneempleado"
         tools:layout="@layout/carneempleado_fragment" />
 
